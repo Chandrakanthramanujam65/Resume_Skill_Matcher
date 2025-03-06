@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Skill Matcher</title>
+    <style>
+      body {
+        width: 350px;
+        padding: 15px;
+        font-family: Arial, sans-serif;
+      }
+      #resumeUpload {
+        margin-bottom: 10px;
+      }
+      #analyzeButton {
+        width: 100%;
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+      #status {
+        margin-top: 10px;
+        color: green;
+      }
+      #resumePreview {
+        margin-top: 10px;
+        max-height: 200px;
+        overflow-y: auto;
+        border: 1px solid #ddd;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>📄 Resume Skill Matcher</h2>
+    <input type="file" id="resumeUpload" accept=".txt,.pdf,.docx" />
+    <div id="resumePreview"></div>
+    <button id="analyzeButton" disabled>Analyze Current Job</button>
+    <div id="status"></div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
